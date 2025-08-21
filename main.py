@@ -66,6 +66,7 @@ def main():
     #computer
     moves=(1,-1,0)
     computer=random.choice(moves)
+    
     #playerinput
     youstr = input("Enter your choice: ")
 
@@ -82,9 +83,12 @@ def main():
     if youstr not in youDict:
         print("Invalid input! Try again.\n")
         return main()
-
+    
     you = youDict[youstr]
+    reversedict={1:"Snake",-1:"Water",0:"Gun"} #to convert int to text to give as an output for your and computer's move
 
+    #print moves
+    print(f"Computer: {reversedict[computer]} \nYou: {reversedict[you]}")
     #win/lose text
     def snake():
         print("Snake drank the water")
