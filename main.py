@@ -3,7 +3,7 @@
 -1 is water
 0 is gun
 '''
-
+#playing again function
 def play_again():
 
     again=input("Want to play again?: ")
@@ -11,10 +11,10 @@ def play_again():
         main()
     elif(again=="no"):
         thx()
-    
+#function to thank you
 def thx():
     print("Thanks for playing")
-
+#help menu
 def show_help():
     print("""
 ==================== Snake-Water-Gun Manual ====================
@@ -46,7 +46,7 @@ How to PLay-again:
         
     """)
 
-
+#the entire function
 def main():
     import random
     #intro 
