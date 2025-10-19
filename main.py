@@ -3,7 +3,7 @@
 -1 is water
 0 is gun
 '''
-#playing again function
+#playin`g again function
 def play_again():
 
     again=input("Want to play again?: ")
